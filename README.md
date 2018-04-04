@@ -6,7 +6,7 @@ Please use this if you don't intend to propose tips. Images will be fixed soon.
 
 Feel free to add comments, and propose changes.
 
-# Seeds
+## Seeds
 
 -3503285926045735642	village (east), bone blocks, river, animals, swamp with shoggoth lair, shadow biome all somewhat near spawn point. 
 
