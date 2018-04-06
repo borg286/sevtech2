@@ -6,8 +6,11 @@
  *
  */
 ul {
-  margin-left:10px;
+    list-style-position: inside;
+    padding-left:0;
 }
+
+
 
 	
   .ref {
