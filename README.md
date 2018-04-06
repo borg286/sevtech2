@@ -1,12 +1,4 @@
----
-title: SevTech Tips and Tricks
-layout: post
-author: borg286
-permalink: /sevtech-tips-and-tricks/
-source-id: 1CcutSAf4NZr8olmg0HA4EFsHfHrFuXhc0B5RoxM4Wr4
-published: true
----
-SevTech Tips and Tricks
+# SevTech Tips and Tricks
 
 Here is web view [https://borg286.github.io/sevtech/](https://borg286.github.io/sevtech/) 
 
@@ -566,7 +558,11 @@ AbyssalCraft is a large mod opening 4 dimensions, growing knowledge about the gr
 
 * They seem to climb similar to spiders. They don't deposit their sludge on bottom half slabs or string. They require a 3x3 hallways to move. However a bunch of them can shove one into a 2x3 hallway. If you are quick you can build a wall right at the bottom of the stairs leading into their lair before they manage to escape. You will get hit at least once since they can hit through a 1 block thick wall but focus on establishing a wall first and pretty it up later. You can build a 3x3 killing chamber at the top of your wall. Use bottom half slabs for the floor and don't bust the wall leading to the lair until your ready for them to come through. Opposite of the wall you can build a 2 block thick wall with a 1 block high slit to slash at them through it. To collect the drop swing underneath and bust out one slab, replace it and repeat until you have all the drops. Mk2 hoppers can suck the items through the slabs for a much safer alternative.
 
-* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
+* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)
+
+As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.
+
+Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
 
 * Video tutorial on finding and dealing with Shoggoth: [https://www.youtube.com/watch?v=mORTlnKoqHQ](https://www.youtube.com/watch?v=mORTlnKoqHQ) 
 
@@ -890,7 +886,8 @@ Storage
 
 # Age 5 
 
-* Progression is currently (as of SevTech 3.0.4) broken to get to Stage 5 due to:	1) Incorrect staging of GalactiCraft Oxygen Fan (affecting Oxygen Collector craftability)
+* Progression is currently (as of SevTech 3.0.4) broken to get to Stage 5 due to:
+	1) Incorrect staging of GalactiCraft Oxygen Fan (affecting Oxygen Collector craftability)
 
 Fix: Oxygen fan has kept its original recipe, so you can trade materials for that, an issue is the wafers portion of the Oxygen Fan recipe
 
