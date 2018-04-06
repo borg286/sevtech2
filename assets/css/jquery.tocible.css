@@ -6,9 +6,9 @@
  *
  */
 ul {
-  padding-left: 0px;
+  margin-left:0px;
 }
-li { padding-left: 0px;}
+li { margin-left:0px;}
 	
   .ref {
 		float:right;	
