@@ -5,7 +5,9 @@
  * https://github.com/markserbol/tocible
  *
  */
-
+ul {
+  padding-left: 0px;
+}
 	
   .ref {
 		float:right;	
