@@ -1,3 +1,11 @@
+---
+title: SevTech Tips and Tricks
+layout: post
+author: borg286
+permalink: /sevtech-tips-and-tricks/
+source-id: 1HQGPm90MVyieiiEkTPyfXIDBAvSkOAAQOoicTzFpmt0
+published: true
+---
 **SevTech Tips and Tricks**
 
 Sevtech is currently 3.0.6 : [Get it here !](https://minecraft.curseforge.com/projects/sevtech-ages/files/2549553)
@@ -184,7 +192,7 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
 
 * If a rock on the ground doesn't break in one click or **sounds like grass** when hitting it, LEAVE IT THERE- it's an ore sample in disguise.
 
-* Carry-On is in the pack, it can pick up most passive mobs (no villagers, buffaloes, horses, or larger mobs)
+* Carry-On is in the pack, it can pick up most passive mobs (no villagers, buffaloes, horses, or larger mobs). Note your reach is less than right clicking.
 
 * **Lighting fire on cobblestone** for your first kiln to cook your charcoal will last a bit longer then on dirt/grass. 
 
@@ -229,10 +237,6 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
 * If you can't find any sharks use a strainer together with a survivalist’s strainer to collect shark teeth (5% chance over 10 minutes is almost guaranteed).
 
 * If your grave gets removed (eg by the Hydra), you can recover it by using the **/tmg_restore** command from Tomb Many Graves mod.
-
-* Monster spawners generate mossy cobblestone from regular cobble, making the mossy variant renewable. (possibly age 2 needed, can't confirm)
-
-* SevTech contains the mod "Despawnable Spawners".  This mod is set up to destroy spawners (the cage block) after it has spawned 400 mobs.
 
 ## Tools
 
@@ -308,11 +312,13 @@ Start with the totem base on the bottom, and your choice for wood placed on top.
 
 * Wolf - Strength
 
-Put 6x horse and 1x enderman + 1x ocelot throughout your base. Put 6x high wolf and 6x cow on entrances of base to fend off foes.
+### Totem tips
 
-When hunting for Shadow creatures during a night, carve a totem base and Enderman totem into the nearby trees, so that you have constant night vision.  Add in Horse totems if the area is swampy for speed boost. Or Wolf totems if battling the Shadow Beasts.
+* Put 6x horse and 1x enderman + 1x ocelot throughout your base. Put 6x high wolf and 6x cow on entrances of base to fend off foes.
 
-When mining underwater for clay, salt, etc. take some wood logs, and make a totem with Squid, Enderman, and Buffalo totems. You'll be able to breathe, see, and mine normally.
+* When hunting for Shadow creatures during a night, carve a totem base and Enderman totem into the nearby trees, so that you have constant night vision.  Add in Horse totems if the area is swampy for speed boost. Or Wolf totems if battling the Shadow Beasts.
+
+* When mining underwater for clay, salt, etc. take some wood logs, and make a totem with Squid, Enderman, and Buffalo totems. You'll be able to breathe, see, and mine normally.
 
 ## Farming
 
@@ -401,6 +407,8 @@ The Nutrition mod encourages you to eat a balanced diet, giving you relevant buf
 * Pork dinner: Cooked Pork+Baked Potato + raw Carrots gives **3% Vegetable, Protein**
 
 * Tasty Sandwich: Cooked Meat of any kind + Bread gives **3% Grain, Protein**
+
+* Rice **(very spammable): 1% Grain**, negligible hunger, 0 saturation
 
 ## Combat
 
@@ -582,11 +590,7 @@ AbyssalCraft is a large mod opening 4 dimensions, growing knowledge about the gr
 
 * They seem to climb similar to spiders. They don't deposit their sludge on bottom half slabs or string. They require a 3x3 hallways to move. However a bunch of them can shove one into a 2x3 hallway. If you are quick you can build a wall right at the bottom of the stairs leading into their lair before they manage to escape. You will get hit at least once since they can hit through a 1 block thick wall but focus on establishing a wall first and pretty it up later. You can build a 3x3 killing chamber at the top of your wall. Use bottom half slabs for the floor and don't bust the wall leading to the lair until your ready for them to come through. Opposite of the wall you can build a 2 block thick wall with a 1 block high slit to slash at them through it. To collect the drop swing underneath and bust out one slab, replace it and repeat until you have all the drops. Mk2 hoppers can suck the items through the slabs for a much safer alternative.
 
-* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)
-
-As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.
-
-Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
+* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
 
 * Video tutorial on finding and dealing with Shoggoth: [https://www.youtube.com/watch?v=mORTlnKoqHQ](https://www.youtube.com/watch?v=mORTlnKoqHQ) 
 
@@ -664,9 +668,11 @@ Your goal is to get a handful of Black Quartz (for actually additions) and Aquam
 
 ![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_4.png)
 
-* You can tell the gearbox and axle are connected right by seeing the axle turn
+* You can tell the gearbox and axle are connected right by seeing the axle turn.
 
-* Making a 4th axle allows the millstone (power must come from bottom of millstone) to be powered here instead of by hand.
+* Making a 4th axle allows the mill stone (power must come from top/bottom of millstone) to be powered here instead of by hand.
+
+* You don't need the axle between the gearbox and waterwheel, but is helpful later when needing the space to surround the mill stone with hoppers
 
 * Because Better With Mods drop all products on the ground so wooden hoppers are your friend, or put it over some water you've removed, thus creating a natural whirlpool into a (underwater net thingy) which stores items.
 
@@ -716,6 +722,10 @@ Astral sorcery is based on star light feeding into bigger and bigger altars and 
 
 * If you want to harvest any of the Low Grade Charcoal blocks, do so before entering the next age as this will cause them to turn into netherrack.
 
+* Monster spawners generate mossy cobblestone from regular cobble, making the mossy variant renewable. (possibly age 2 needed, can't confirm)
+
+* SevTech contains the mod "Despawnable Spawners".  This mod is set up to destroy spawners (the cage block) after it has spawned 400 mobs.
+
 ## What you can do now
 
 * Tinker's Crafting Station
@@ -744,11 +754,35 @@ In the picture below, the turntable rotates the switch so all four melters are e
 
 * If you see an Enderman you should absolutely try to kill him. If you can you should make a Luck 3 totem pole as well. Ender pearls are important.  Endermen will only drop ender dusts.  You can smelt these in the melter and cast them to ender pearls using the pan cast.
 
+## Which pickaxe to pick
+
+### Tinker's Construct
+
+These tools allow you to swap out parts, gain modifier slots the more you use them, and have a very large selection of materials to use. There are lots of abilities tied to each modifier, allowing a great deal of customization to fit your needs.
+
+A bronze pickaxe (Bronze head, bone handle, iron binding) has diamond mining level, 578 durability, and Dense, and Magnetic. 2 bronze ingots makes a repair kit, repairing X durability.
+
+Dense uses less durability the more damaged it is. Later can be combined with reinforced modifier and it will reach a point that it is infinite. In age 3 you can get the Excavation modifier to quickly level it up.
+
+### Black Quartz
+
+While a black quartz pickaxe isn't much to write home about, combining with the hoe, sword, axe, and shovel gives an AIOT tool (All In One Tool) with X durability, and great damage. 1 black quartz repairs 370 durability.
+
+### Betweenlands
+
+Octine tools are better than iron: Mining Speed 6, 900 durability, can be enchanted
+
+Valonite are as good as steel: Diamond mining, Mining speed 8, 2500 durability, can be enchanted
+
+### Twilight Fortress
+
+Ironwood Pick: Diamond level, Mining speed 6.5, 512 durability
+
+Mazebreaker: Diamond level, Mining Speed 8, 1561 durability, Efficiency 4, Unbreaking 3, Fortune 2
+
 ## Tinkers Construct
 
 Note: Blank patterns require Sidings from the Saw instead of sticks.
-
-Tinkers tools are split between parts that require pouring liquid metal into a cast and those that do not. This section focuses on what you can get without casts.
 
 * Make sure the pattern chest is touching both the pattern table and the part builder, otherwise you have to access it by clicking on the pattern chest tab.
 
@@ -774,6 +808,10 @@ Tinkers tools are split between parts that require pouring liquid metal into a c
 
 * Melee: A bone and flint mattock with bone handle does **as much damage as a diamond sword**
 
+* Bronze heads are the best material for pickaxes, hammers, and things that need both speed and durability.
+
+* [Here](http://tinkers-construct.wikia.com/wiki/Material_Stats) are the modifiers and descriptions
+
 ### [Optional] Tool Forge
 
 You can make a Tool forge by burning grout into seared stone and 4 tin/copper blocks.
@@ -783,6 +821,18 @@ You can make a Tool forge by burning grout into seared stone and 4 tin/copper bl
 * Stone on the other hand, doesn't require casts, and can be repaired easily. Recall parts can be swapped out when you get a full smeltery for better parts.
 
 * Make a **Stone Hammer** and Stone Lumber Axe for quick mining and felling
+
+* The materials used in faceplates and heads can be used for repairing.
+
+    * A wood faceplate gives ecological (self repairing) and is cheap to repair, at the cost of max durability
+
+    * Stone is a bit faster and as common when mining
+
+    * Iron gives magnetic (pull drops towards you)
+
+    * Slime gives high durability, sporadically spawn slimes when mining, useful for the excavation modifier next age.
+
+    * Stone makes it mine faster the lower the durability.
 
 * Shuriken: The upper left-hand corner determines what material repairs it.
 
@@ -802,8 +852,7 @@ Pick one of the following for holding lava:
 
 * A Between lands Bucket![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_6.png) made from Syrmorite holds lava
 
-* Wood Barrels can hold up to 8000mb of Lava and can be shift-right clicked to store in your inventory. Lava will burn the barrel if left in the Overworld. It will also burn you if you stand next to the burning barrel (oops).
-Placing a lid on the wooden barrel lets you pick it up into inventory.
+* Wood Barrels can hold up to 8000mb of Lava and can be shift-right clicked to store in your inventory. Lava will burn the barrel if left in the Overworld. It will also burn you if you stand next to the burning barrel (oops).Placing a lid on the wooden barrel lets you pick it up into inventory.
 
 ### Hematite
 
@@ -911,6 +960,8 @@ Prerequisite: Turntable[Better with mods], Aqua Middle gem[Betweenlands]
 
 * Celestial Gateways allow for inter-dimensional transport, you can set up gateways to travel to the end, nether (ceiling), or even other GalaticCraft planets - the multiblocks can be built in stage 2
 
+* The Crystal pick doesn't seem to take damage when mining normal stuff. 
+
 # Age 3
 
 **Ores:** Galena (Silver and Lead), Limonite (Iron and Nickel), Platinum, Cinnabar (Redstone), Bauxite (Aluminum), Nether Quartz, Nether Amethyst.
@@ -989,8 +1040,7 @@ Storage
 
 * IF's Water Condenstrator produces about 100mb/t of water per water source block adjacent to it
 
-* Spawner Agitators get around the despawning spawners limit
- 
+* Spawner Agitators get around the despawning spawners limit 
 
 # Age 5 
 
@@ -1019,6 +1069,8 @@ Stage 5 really opens to be a kitchen sink pack with a lot of default recipes and
     * Can trade for the Tier 2 Rocket schematics with villagers if you don't feel dungeon crawling for one
 
     * GalaticCraft ores are not staged, and therefore fake players can quarry them
+
+        * For quarrying, the two best options are RFtools Builders with a storage filter module (for blacklisting) or a Mekanism Digital Miner
 
     * Use Meteoric Iron sparingly until you get to the Asteroid belt as it's generation requires waiting in either the moon or mars
 
