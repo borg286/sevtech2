@@ -1,4 +1,14 @@
-# SevTech Tips and Tricks
+---
+title: SevTech Tips and Tricks
+layout: post
+author: borg286
+permalink: /sevtech-tips-and-tricks/
+source-id: 1HQGPm90MVyieiiEkTPyfXIDBAvSkOAAQOoicTzFpmt0
+published: true
+---
+**SevTech Tips and Tricks**
+
+Sevtech is currently 3.0.6 : [Get it here !](https://minecraft.curseforge.com/projects/sevtech-ages/files/2549553)
 
 Here is web view [https://borg286.github.io/sevtech/](https://borg286.github.io/sevtech/) 
 
@@ -6,15 +16,37 @@ Please use this if you don't intend to propose tips. Images will be fixed soon.
 
 Feel free to add comments, and propose changes [here](https://docs.google.com/document/d/1HQGPm90MVyieiiEkTPyfXIDBAvSkOAAQOoicTzFpmt0/comment).
 
+### Performance tips:
+
+* Don't allocate more memory than needed.  The standard pack shouldn’t need more than 4GB of RAM allocated.
+
+* Custom java arguments for garbage collection: -XX:+UseG1GC -Dsun.rmi.dgc.server.gcInterval=2147483646 -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+
+* Disabling certain mods can improve performance:
+
+    * Better foliage - This mod makes leaves and grass appear more complex.
+
+    * Fancy block particles - Replaces breaking blocks into a 3D variant.
+
+    * Smooth font - Replaces the standard font.
+
+* Install optifine to finetune the graphical experience you want to have: [https://optifine.net/downloads](https://optifine.net/downloads)
+
+    * Some people report invisible blocks when using optifine, in **config/thebetweenlands/config.cfg** change **B:fullbright_blocks=true** to **false**.
+
+* Twilight Forest tweaks (config/twilightforest.cfg) :
+
+    * Set **B:leavesFullCube=true** to **false** to decrease FPS stuttering.
+
 ### Seeds
 
--3503285926045735642	village (east), bone blocks, river, animals, swamp with shoggoth lair, shadow biome all somewhat near spawn point. 
+-3503285926045735642  (pre 3.0.5)  village (east), bone blocks, river, animals, swamp with shoggoth lair, shadow biome all somewhat near spawn point. 
 
--115227398    Start in AbyssalCraft biome, close village to NW (Another South of that one), nice open area to the east with river biome, large forest and lots of animals. Another village north on other side of tall hills across grassy plains with lots of streaming water..
+-115227398    (pre 3.0.5)  Start in AbyssalCraft biome, close village to NW (Another South of that one), nice open area to the east with river biome, large forest and lots of animals. Another village north on other side of tall hills across grassy plains with lots of streaming water..
 
--8872794606572219902     Spawn next to Laketown (village in middle of lake). High flat mountain at your back for strong star light with a tin vein. On other side of lake is a large flat area with **large **bone structure VERY nearby, Eucalyptus and a Mulberry tree, 2 coal, 2 copper veins, 1 gold. Lapis on island next to village. Majority of lake is only 1 block deep, making easy access to gravel, salt, sand, and clay. Nearby big hole(y=51 @ base) with Copper cluster. Snow mountain nearby (Build up 20+ blocks on peak for easy access to ceiling of The Beneath).
+-8872794606572219902   (3.0.4)  Spawn next to Laketown (village in middle of lake). High flat mountain at your back for strong star light with a tin vein. On other side of lake is a large flat area with **large **bone structure VERY nearby, Eucalyptus and a Mulberry tree, 2 coal, 2 copper veins, 1 gold. Lapis on island next to village. Majority of lake is only 1 block deep, making easy access to gravel, salt, sand, and clay. Nearby big hole(y=51 @ base) with Copper cluster. Snow mountain nearby (Build up 20+ blocks on peak for easy access to ceiling of The Beneath).
 
-### Ore distributions:
+### Ore distributions (as of 3.0.6):
 
 <table>
   <tr>
@@ -42,7 +74,7 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
     <td>Overworld & Twilight Forest</td>
   </tr>
   <tr>
-    <td>Bauxite</td>
+    <td>Bauxite (aluminium)</td>
     <td>45</td>
     <td>79</td>
     <td>Overworld & Twilight Forest</td>
@@ -56,7 +88,7 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
   <tr>
     <td>Black Quartz</td>
     <td>2</td>
-    <td>20</td>
+    <td>100</td>
     <td>The Beneath only</td>
   </tr>
   <tr>
@@ -81,10 +113,10 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
     <td>Corrallium</td>
     <td>4</td>
     <td>56</td>
-    <td>Overworld (Ocean & Swamp) & rarely on TF pillars</td>
+    <td>Overworld (Ocean & Swamp) & Twilight Forest</td>
   </tr>
   <tr>
-    <td>Galena</td>
+    <td>Galena (silver & lead)</td>
     <td>16</td>
     <td>50</td>
     <td>Overworld & Twilight Forest</td>
@@ -114,7 +146,7 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
     <td>Overworld & Twilight Forest</td>
   </tr>
   <tr>
-    <td>Limonite</td>
+    <td>Limonite (iron & nickel)</td>
     <td>6</td>
     <td>32</td>
     <td>Overworld & Twilight Forest</td>
@@ -158,15 +190,13 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
 
 * You can access the main quest guide by pressing L. Purple quests lead you to the end of the age (If there is no color, this is talking about the ones with  2 round sides. The stars are the final quest in the age).
 
-* Instead of a Crafting Table, you'll get a Crafting Stump. Place ingredients for the recipe in its grid by right clicking the item into the desired slot, and hit it with a rock a few times. I love the way items hop around. Really reinforces the early tech feel of the age.
+* If a rock on the ground doesn't break in one click or **sounds like grass** when hitting it, LEAVE IT THERE- it's an ore sample in disguise.
 
-* If a rock doesn't break in one click, LEAVE IT THERE- it's an ore sample in disguise.
+* Carry-On is in the pack, it can pick up most passive mobs (no villagers, buffaloes, horses, or larger mobs)
 
-* With an empty hands, you can shift+right click animals, chests, hoppers, and barrels to pick them up and **carry them**. (villagers, horses or adult buffalo cannot be picked up, shift-right click for ½ of a second)
+* **Lighting fire on cobblestone** for your first kiln to cook your charcoal will last a bit longer then on dirt/grass. 
 
-* **Lighting fire on cobblestone** for your first kiln to cook your charcoal will last a bit longer then on dirt/grass. The latter will not finish the cooking process in time before it burns out, and you will find yourself wasting whittling sticks.
-
-* If you found a new item not from Age 0 and you know it's precious, you can use the drop-off button in your inventory or a hopper to put it in a chest
+* Quark's inventory drop-off button allows you to bypass the Stage’s restriction by letting you put unfamiliar items into nearby chests/hoppers
 
 * The world generates in a **logical heat map**. Need snow or a desert? Travel North or South until you find it!
 
@@ -209,6 +239,8 @@ Feel free to add comments, and propose changes [here](https://docs.google.com/do
 * If your grave gets removed (eg by the Hydra), you can recover it by using the **/tmg_restore** command from Tomb Many Graves mod.
 
 * Monster spawners generate mossy cobblestone from regular cobble, making the mossy variant renewable. (possibly age 2 needed, can't confirm)
+
+* SevTech contains the mod "Despawnable Spawners".  This mod is set up to destroy spawners (the cage block) after it has spawned 400 mobs.
 
 ## Tools
 
@@ -558,11 +590,7 @@ AbyssalCraft is a large mod opening 4 dimensions, growing knowledge about the gr
 
 * They seem to climb similar to spiders. They don't deposit their sludge on bottom half slabs or string. They require a 3x3 hallways to move. However a bunch of them can shove one into a 2x3 hallway. If you are quick you can build a wall right at the bottom of the stairs leading into their lair before they manage to escape. You will get hit at least once since they can hit through a 1 block thick wall but focus on establishing a wall first and pretty it up later. You can build a 3x3 killing chamber at the top of your wall. Use bottom half slabs for the floor and don't bust the wall leading to the lair until your ready for them to come through. Opposite of the wall you can build a 2 block thick wall with a 1 block high slit to slash at them through it. To collect the drop swing underneath and bust out one slab, replace it and repeat until you have all the drops. Mk2 hoppers can suck the items through the slabs for a much safer alternative.
 
-* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)
-
-As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.
-
-Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
+* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
 
 * Video tutorial on finding and dealing with Shoggoth: [https://www.youtube.com/watch?v=mORTlnKoqHQ](https://www.youtube.com/watch?v=mORTlnKoqHQ) 
 
@@ -644,7 +672,7 @@ Your goal is to get a handful of Black Quartz (for actually additions) and Aquam
 
 * Making a 4th axle allows the millstone (power must come from bottom of millstone) to be powered here instead of by hand.
 
-* Because Better With Mods annoyingly drop all products, wooden hoppers are your friend.
+* Because Better With Mods drop all products on the ground so wooden hoppers are your friend, or put it over some water you've removed, thus creating a natural whirlpool into a (underwater net thingy) which stores items.
 
 * Completing the saw also makes Wooden gears much cheaper.
 
@@ -657,6 +685,40 @@ Astral sorcery is based on star light feeding into bigger and bigger altars and 
 * The meat of astral sorcery is covered in [Age 2: Astral Sorcery](#heading=h.q8tahli9nh0b)
 
 # Age 2
+
+## Uncategorized Tips
+
+* You can store Improved Backpacks' backpacks inside Iron Backpacks’ backpacks.
+
+* There are a few useful baubles that we can now craft:
+
+    * Climbing Gloves : Let's you climb vertical walls.
+
+    * [Gluttony Charm](https://ftb.gamepedia.com/Gluttony_Charm) : Consume food instantly
+
+    * [Sleep Charm](https://ftb.gamepedia.com/Sleep_Charm) : Sleeping is instantaneous
+
+    * [Portal Charm](https://ftb.gamepedia.com/Portal_Charm)  Allows for instantaneous travel through dimensional portals
+
+    * Compass : The X and Z of the player
+
+    * Stopwatch : The movement speed of the player
+
+    * Depth Meter : The Y of the player
+
+    * Slimey Compass : Whether or not the player is in a slime chunk
+
+    * Chunker : The Chunk's X and Y coordinate
+
+    * Calendar : 
+
+    * Biomealyzer : Displays the name of the biome you're in.
+
+    * Super Sound Muffler : Allows for the muffling of certain categories of sounds
+
+* Not all of these baubles need to be equipped to work.  Most will work as long as they're in the inventory.
+
+* If you want to harvest any of the Low Grade Charcoal blocks, do so before entering the next age as this will cause them to turn into netherrack.
 
 ## What you can do now
 
@@ -676,8 +738,6 @@ Astral sorcery is based on star light feeding into bigger and bigger altars and 
 
 * Ranged weapon, See Tinkers construct right below
 
-* TODO: See if the other crafting table on a stick retains it's inventory.
-
 Now that we have access to a lever, a dependable clock can be created using the turntable.  Put a block on the (working) turntable, attach a lever to it.  Activate the lever.  Then make sure the faucet is on the other side of the lever.  The rotation of the turntable will send a pulse to the faucet.  Select the wanted speed by right clicking the turntable with an empty hand.  There are four sides, so a single turntable can cycle four smelters/spigots.
 
 In the picture below, the turntable rotates the switch so all four melters are emptied automatically.  On top of the windmill's gearbox is a bamboo chime.  This block will emit a redstone signal when it rains, making sure the gearbox doesn’t get damaged.
@@ -686,7 +746,7 @@ In the picture below, the turntable rotates the switch so all four melters are e
 
 ### Things to look out for
 
-* If you see an Enderman you should absolutely try to kill him. If you can you should make a Luck 3 totem pole as well. Ender pearls are important.
+* If you see an Enderman you should absolutely try to kill him. If you can you should make a Luck 3 totem pole as well. Ender pearls are important.  Endermen will only drop ender dusts.  You can smelt these in the melter and cast them to ender pearls using the pan cast.
 
 ## Tinkers Construct
 
@@ -698,7 +758,13 @@ Tinkers tools are split between parts that require pouring liquid metal into a c
 
 * The crafting station is the block that allows the rest to be accessed as tabs in one UI.
 
-* You can make **casts by Melting clay**, pouring over stone part, melting metal, and pouring into clay cast, consuming the cast in the process
+* You can make **one-use-****casts by Melting clay** and pouring it over astone part. Melting metal, and pouring it onto a  clay cast, consumes the cast in the process.
+
+* Lasting casts can be made by pouring gold over a stone part.  These casts won't be consumed by future use.
+
+* Make a stone nugget to create the nugget cast.
+
+* Use a (clay, mud, seared) brick to create the ingot cast.  You could use an ingot as well, but that seems wasteful.
 
 * Best bow
 
@@ -728,7 +794,7 @@ You can make a Tool forge by burning grout into seared stone and 4 tin/copper bl
 
 ## Getting Iron
 
-Iron is now open, but your melter isn't going to get hot enough. In addition to tracking it down and mining it, you’ll need lava and the crystal from the Between Lands to make the smeltery controller
+Iron is now open, but your melter isn't going to get hot enough. In addition to tracking it down and mining it, you’ll need lava in either a porcelain or seared tank (matching your melter)
 
 ### Handling lava
 
@@ -740,7 +806,7 @@ Pick one of the following for holding lava:
 
 * A Between lands Bucket![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_6.png) made from Syrmorite holds lava
 
-* Wood Barrels can hold up to 8000mb of Lava and can be shift-right clicked to store in your inventory. Lava will burn the barrel if left in the Overworld. It will also burn you if you stand next to the burning barrel (oops).
+* Wood Barrels can hold up to 8000mb of Lava and can be shift-right clicked to store in your inventory. Lava will burn the barrel if left in the Overworld. It will also burn you if you stand next to the burning barrel (oops).Placing a lid on the wooden barrel lets you pick it up into inventory.
 
 ### Hematite
 
@@ -752,7 +818,7 @@ Pick one of the following for holding lava:
 
 ![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_8.png)![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_9.png)
 
-* Make a stone bucket, melt 2 clay, place in a table and pour clay to make a cast. Pouring 3 iron gives you a bucket.
+* Make a stone bucket and place in a table, then melt 2 clay and pour to make a bucket cast. Pouring 3 iron gives you a bucket. Use gold instead of clay if you think you'll need more buckets.(the watering can consumes the bucket in its recipe)
 
 ## The Between Lands
 
@@ -769,6 +835,8 @@ Goal: Obtaining a Aqua Middle gem found in Sludge Plains lakes
 * Take neither food, Potions, bedding, Vanilla Torches nor weapons (overland diamond < between wood sword)
 
 * Totem torches work normally in the Between lands
+
+* Setting the spawn point with a sleeping bag apparently works.
 
 * Find Bushes to get Weedwood sticks. The SevTech recipe killed weedwood planks -> weedwood sticks
 
@@ -802,11 +870,11 @@ Prerequisite: Turntable[Better with mods], Aqua Middle gem[Betweenlands]
 
 ## Twilight Forest
 
-* The portal to the twilight forest is built in the same way as usual, because you do not have access to diamonds it is opened with a Starmetal Ingot.
+* The portal to the twilight forest is built in the same way as usual. Because you do not have access to diamonds it is opened with a Starmetal Ingot.
 
-* When teleporting between worlds with a magic map, it might stop updating in the Twilight Forest.  Save, quit & reload while in TF solves this.  (I still need to test if storing maps in a chest in TF avoids this issue)
+* When teleporting between worlds with a magic map, it might stop updating in the Twilight Forest.  Save, quit & reload while in TF solves this.  Storing the maps in a chest inside the Twilight Forest doesn't bypass this issue.
 
-* Ore veins spawn in the Twilight Forest, and due to the dimension's lower surface height can be a lot easier to reach, or in some cases even be found right at the surface.
+* Vanilla ore veins spawn in the Twilight Forest, and due to the dimension's lower surface height can be a lot easier to reach, or in some cases even be found right at the surface.
 
 * If you notice a lot of FPS lag while in Twilight Forest, try reducing your view distance.  This kind of stuttering is usually related to minecraft trying to render too many textures.
 
@@ -816,17 +884,15 @@ Prerequisite: Turntable[Better with mods], Aqua Middle gem[Betweenlands]
 
 * Maze wafers are a decent source of grain nutrients and can be found in Labyrinths and other dungeons later in the progression.
 
-* Dark Towers have plenty of useful items to loot, including Brewing Stands, Anvils, and Pistons, as well as the Carminite Reactor you will need at the end of this age, in addition to this there will be plenty of spawners that will spawn carminite ghasts which you can kill for ghast tears, and there are a lot of chests to loot for other goodies like Redstone Lamps, glowstone dust, and a lot of protein food (Experiment 115).
+* A more invasive alternative to getting at the Labyrinth's secret vault for the Mazebreaker for your coal engine is using the old fashioned method: explosives. Angry Pebbles from Betweenlands towers works/TNT/letting creepers blow up.
 
-* If you want to harvest any of the Low Grade Charcoal blocks, do so before entering the next age as this will cause them to turn into netherrack.
+* Dark Towers have plenty of useful items to loot, including Brewing Stands, Anvils, and Pistons, as well as the Carminite Reactor you will need at the end of this age, in addition to this there will be plenty of spawners that will spawn carminite ghasts which you can kill for ghast tears, and there are a lot of chests to loot for other goodies like Redstone Lamps, glowstone dust, and a lot of protein food (Experiment 115).
 
 * Dark Towers also can contain Blaze spawners, though Blazes don't actually seem to spawn in age 2. 
 
 ## Astral sorcery
 
 * Star light increases with Y level, up to 120. Higher than that doesn't matter. Once you get more advanced altars this benefit doesn't matter.
-
-* Wait till night to find a spot open to the sky. Each chunk has its own star light levels.
 
 * Need bronze tier pickaxe or claw paxel to pick up the luminous crafting table
 
@@ -836,7 +902,7 @@ Prerequisite: Turntable[Better with mods], Aqua Middle gem[Betweenlands]
 
 * Crystal rock samples look like:![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_16.png)
 
-* When making a crystal grow by soaking it in starlight, if you continue past the maximum size there is a decent chance that a second crystal will form with higher purity (this is also the only way to increase purity). See [here](https://youtu.be/i22YPsbfego?t=5m23s) for example
+* When making a crystal grow by soaking it in starlight, if you continue past the maximum size there is a 1/6th chance that a second crystal will form with higher purity (this is also the only way to increase purity). See [here](https://youtu.be/i22YPsbfego?t=5m23s) for example
 
 * You ALWAYS want to use perfect crystals for rituals and collector crystals, and preferably celestial crystals
 
@@ -844,54 +910,139 @@ Prerequisite: Turntable[Better with mods], Aqua Middle gem[Betweenlands]
 
 * Rock Crystal ore is not mineable with a stone pickaxe, you need something with mining level diamond to harvest it (like an iron or bronze pickaxe from tinkers or claw paxel available starting from Age 0).
 
-* In regards to starlight generation: Aquamarine < Resonant Aquamarine < Rock Crystal < Celestial Crystal < Attuned Rock Crystal < Attuned Celestial Crystal
+* In regards to liquid starlight generation in a lightwell: Aquamarine < Resonant Aquamarine < Rock Crystal < Celestial Crystal < Attuned Rock Crystal < Attuned Celestial Crystal
+
+* Celestial Gateways allow for inter-dimensional transport, you can set up gateways to travel to the end, nether (ceiling), or even other GalaticCraft planets - the multiblocks can be built in stage 2
 
 # Age 3
 
-**Ores:** Galena (Silver and Lead), Limonite (Iron and Nickel), Platinum, Cinnabar (Redstone), Bauxite (Aluminum), Nether Quartz.
+**Ores:** Galena (Silver and Lead), Limonite (Iron and Nickel), Platinum, Cinnabar (Redstone), Bauxite (Aluminum), Nether Quartz, Nether Amethyst.
 
 **Tools:**** **
 
 **Key Items:**
 
-### Filtered Hopper
+### Nether
+
+* You can cast yourself a nether portal out of lava - [https://imgur.com/a/tBwOZ](https://imgur.com/a/tBwOZ) - (unless you are close to one of the world generated ones). 
 
 * When turning into hellfire dust know that the 8th dust spawns a ghast if you don't have a vase under the hopper. If the hopper is receiving mechanical power, it also wont spawn a ghast or break when trying to create large amounts of hellfire dust.
 
+* Nether Amethyst Ore only spawns in the vanilla Hell biome (get a Biomeanalyzer). It's rare, so Fortune III is recommended
+
+* When farming a blaze spawner don't forget to make yourself some totems (luck, fire protection).
+
 Storage
 
-* At this age, you gain access to obsidian. Using said obsidian, you can now create Obsidian Chests. This is the largest of the Iron Chests mod, and it is also blast-proof. As Obsidian is very easy to comeby, this is very worth its value.
+* Obsidian chests are the best one block storage options for its price
 
 * You gain access to tanks, specifically from Immersive Engineering. While this multiblock is non-portable, it is very useful for storing large amounts of fluids. This is good for creosote, lava (though this might be difficult to collect), and water. These liquids have been, and will continue to be very useful (well you just gained access to creosote but it applies to it as well) so it is recommended to store up on them.
 
 ## Tinker's Construct Tools:
 
-* You gain access to the Ore Excavation modifier in this age (alongside the ability to add modifiers in general). This allows you to, for example, easily mine up an ore deposit within seconds. Check options for the keybindings available. Also, if you press control before hitting the keybind for toggling your excavation shape, you open a GUI allowing you to add or edit shapes to work with. Ore excavation, when activated by holding down the excavate keybinding at the breaking of a block, will persist until one of three things happens: 1. You stop holding down the excavate keybind, 2. You run out of hunger, or 3. You run out of the type of block you were excavating. Note that even if your tool breaks, it will keep excavating until one of those three things happens. You gain tool experience for every block excavated, as long as your tool isn't broken. Also, ore excavation is brutal on your hunger (and thus, your Nutrition). Keep a bunch of food handy.
+* You gain access to the Ore Excavation modifier in this age (alongside the ability to add modifiers in general). Check options for the keybindings available. Ctrl+OreEx keybind opens up a GUI that allows you to edit shapes if you want.
+
+* OreEx will continue mining blocks with your tool even if it breaks, it only stops until one of the following happens:
+
+    * Your hunger hits zero
+
+    * You let go of the excavation key
 
 * You can swap parts on your tinker tools without any penalty. This lets you do something like create a pickaxe with a stone head, add the ore excavation modifier to it, and then mine through huge amounts of stone, repairing the tool as you go (make sure to have a Tool Station on hand and a LOT of food) in order to level it up very quickly. My personal preference was to add, in order, the ore excavation modifier, 5 reinforcement modifiers (ASAP as soon as you get the levels, to make the tool's durability last longer than your hunger) to make it unbreakable, and then Luck III. Due to Ore Excavation, redstone (Haste) isn’t as important, so it can wait. Also, since you can replace parts without penalty, you can keep this pickaxe/axe/shovel/whatever for the rest of the game, replacing any part on it whenever something better shows up without having to worry about ever repairing it.
 
+* Absolutely make yourself a Luck III pick (costs 360 lapis), either on your main pick or keep a spare just for the ores that are annoying to find (nether amethyst, aquamarine, ...)
+
+    * Most geolosys ores are not affected by Luck, the ones affected by Fortune/Luck will be noted above in the Ore Distribution chart
+
+    * Mobs with modified drop tables such as Blazes and Endermen are not affected by Luck/Looting
+
+* Magma block/Netherrack over a Lightwell generates Lava for your furnace.
+
+## Stoked Fire
+
+* Make a Hibachi and Bellows, plug bellows onto an axle and create a [redstone clock](https://minecraft.gamepedia.com/Clock_circuit#Repeater_clock) (or make a timer) that turns of/on the gearbox. Put a redstone torch next to the Hibachi and you should see a blue flame - stoked fire. This unlocks many new cool things.
+
+* When you put [4 bricks above the stoked fire](http://sargunster.com/btw/index.php?title=Kiln) you will get a Kiln. You can make nether bricks in it - this unlocks the blast furnace from Immersive Engineering, therefore Steel and this will unlock doing most of the IE things in this Age.
+
+* When you put a Better with mods Crucible above the stoked fire you can melt down armor (gold and iron) to ingots and nuggets. Combo this with the hunting dimension and a mob grinder there to get infinite gold and iron.
+
+## Immersive Engineering
+
+* Except power, first thing you should make is a Metal Press (more efficient rods and wires).
+
+## Airship
+
+* Even though the airship looks cool, it's not on the main questline and it’s very expensive to make. It requires you to upgrade the extended crafting table, and then make the airship using a lot of resources. Prioritize other progression before making it.
+
 ## Astral Sorcery
 
-* Don't waste time on a Mineralis ritual yet, it’s been reported and the configs need to be altered so it doesn’t break pack progression, same goes with Aevitas perk. The Aevitas perk works, but it’ll make a lot of ore that if you mine will be unfamiliar, and as such won't be very helpful for a while.
+* Don't waste time on a Mineralis ritual yet, it’s been reported and the configs need to be altered so it doesn’t break pack progression, same goes with Aevitas perk.  Mining with this method results in a break in progression, as it can provide ores from GalaticCraft planets / Asteroids, this nullifying most of intended GalaticCraft methods.
 
 * The Armara perks make you extremely hard to kill, and several of the perks work on damage that doesn't seem to be affected by armor. For example, the Dread Plague from Abyssalcraft is reduced in damage significantly by the 'No armor is more armor’ perk, making the Dreadlands much easier than otherwise. Armara also almost reduces fall damage to 0, allowing you to use the slimesling without the boots.
 
 # Age 4
 
-**Ores:** Assorted Quartz (affected by Fortune) (Bugged in 3.0.4, will not give anything other than Nether Quartz! Fixed in 3.0.5 when that releases)
+**Ores:** Assorted Quartz (affected by Fortune)
 
 **Tools:**
 
-**Key Items:**
+**Key Items: **
+
+* IF's Rancher gets around BWA’s Fleece and harvests wool from sheep directly, this can also occasionally be a source of powdered dye production from further processing the coloring byproducts from crushing wool
+
+* IF's Water Condenstrator produces about 100mb/t of water per water source block adjacent to it
+
+* Spawner Agitators get around the despawning spawners limit 
 
 # Age 5 
 
-* Progression is currently (as of SevTech 3.0.4) broken to get to Stage 5 due to:
-	1) Incorrect staging of GalactiCraft Oxygen Fan (affecting Oxygen Collector craftability)
+**Tools: **
 
-Fix: Oxygen fan has kept its original recipe, so you can trade materials for that, an issue is the wafers portion of the Oxygen Fan recipe
+**Key Items: **See individual GalacticCraft section
 
-2) Invalid rocket fuel recipe as it uses mekanism liquid oxygen instead of GC oxygen
+Stage 5 really opens to be a kitchen sink pack with a lot of default recipes and minimal tweaks in configs. The only real big recipe changes are the creative items.
 
-Temporary Fix: Darkosto has recently added a recipe that makes GC Fuel with 250mb of GC Oxygen and 100mb of Kerosene (same proportions as the Mek Liquid Oxygen recipe already added, so you can just void materials in proper ratio to get your own Fuel, there is no non-creative fix
+**Power**
+
+* RFTools Powercells transport power interdimensionally
+
+**Ore Processing**
+
+* Mekanism Metallurgic infusers have a 1:5 tin to copper ratio for making bronze
+
+**Storage**
+
+* Quantum Storage Disks (from Quantum Storage compat with Refined Storage) store 2.14B items of any types and are very cheap, it trivializes most other storage options in the pack
+
+**Space**
+
+* Moon
+
+    * Can trade for the Tier 2 Rocket schematics with villagers if you don't feel dungeon crawling for one
+
+    * GalaticCraft ores are not staged, and therefore fake players can quarry them
+
+    * Use Meteoric Iron sparingly until you get to the Asteroid belt as it's generation requires waiting in either the moon or mars
+
+    * Dungeon generation is different than before, dungeons do not share the same coordinates going from one planet to another
+
+* Mars
+
+    * Has a higher meteor rate than the Moon
+
+* Mercury
+
+    * One of the few GalaticCraft planets where you actually need the pressure suit as Armara + natural food regen cannot out heal the damage from this planet's environment
+
+* Jupiter
+
+    * The dungeon is a little bit harder to find due to the fog, lightning storm, and monotone color palette of Jupiter, this was a screenshot of the dungeon entrance that I almost missed
+
+![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_17.png)
+
+* Saturn
+
+    * Saturn Slime Ore has incorrect localization, in-world WAILA will recognize it as Saturn Surface Rock, and needs to be silk touched to get the ore itself (easily found in the Surface in large patches of Saturn Infected Rock
+
+    * 
 
