@@ -1,10 +1,18 @@
+---
+title: SevTech Tips and Tricks
+layout: post
+author: borg286
+permalink: /sevtech-tips-and-tricks/
+source-id: 1HQGPm90MVyieiiEkTPyfXIDBAvSkOAAQOoicTzFpmt0
+published: true
+---
 **SevTech Tips and Tricks**
 
 Sevtech is currently 3.0.6 : [Get it here !](https://minecraft.curseforge.com/projects/sevtech-ages/files/2549553)
 
-Here is web view [https://borg286.github.io/sevtech/](https://borg286.github.io/sevtech/) 
+Here is the web view [https://borg286.github.io/sevtech/](https://borg286.github.io/sevtech/) 
 
-Please use this if you don't intend to propose tips. Images will be fixed soon.
+Please use this if you don't intend to propose tips.
 
 Feel free to add comments, and propose changes [here](https://docs.google.com/document/d/1HQGPm90MVyieiiEkTPyfXIDBAvSkOAAQOoicTzFpmt0/comment).
 
@@ -582,11 +590,7 @@ AbyssalCraft is a large mod opening 4 dimensions, growing knowledge about the gr
 
 * They seem to climb similar to spiders. They don't deposit their sludge on bottom half slabs or string. They require a 3x3 hallways to move. However a bunch of them can shove one into a 2x3 hallway. If you are quick you can build a wall right at the bottom of the stairs leading into their lair before they manage to escape. You will get hit at least once since they can hit through a 1 block thick wall but focus on establishing a wall first and pretty it up later. You can build a 3x3 killing chamber at the top of your wall. Use bottom half slabs for the floor and don't bust the wall leading to the lair until your ready for them to come through. Opposite of the wall you can build a 2 block thick wall with a 1 block high slit to slash at them through it. To collect the drop swing underneath and bust out one slab, replace it and repeat until you have all the drops. Mk2 hoppers can suck the items through the slabs for a much safer alternative.
 
-* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)
-
-As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.
-
-Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
+* An image of the possible killing chamber (as described above): [https://i.imgur.com/QmraP58.png](https://i.imgur.com/QmraP58.png)As long as you don't go in far enough to attract the attention of the Shoggoth in the back, you should have a endless supply of them. My first attempt I went for a killing hole in the floor and it didn't work out very well since that angered all of them which meant no new Shoggoth could spawn after they were all dealt with.Punji sticks don't work on them since they climb walls. Lighting them on fire with fiber torches is very slow. Slashing them is slow and consumes roughly 6 swords to get 1 stack of their drops.
 
 * Video tutorial on finding and dealing with Shoggoth: [https://www.youtube.com/watch?v=mORTlnKoqHQ](https://www.youtube.com/watch?v=mORTlnKoqHQ) 
 
@@ -848,8 +852,7 @@ Pick one of the following for holding lava:
 
 * A Between lands Bucket![image alt text]({{ site.url }}/public/BMbpD6rCZ1qoniF20u7H2A_img_6.png) made from Syrmorite holds lava
 
-* Wood Barrels can hold up to 8000mb of Lava and can be shift-right clicked to store in your inventory. Lava will burn the barrel if left in the Overworld. It will also burn you if you stand next to the burning barrel (oops).
-Placing a lid on the wooden barrel lets you pick it up into inventory.
+* Wood Barrels can hold up to 8000mb of Lava and can be shift-right clicked to store in your inventory. Lava will burn the barrel if left in the Overworld. It will also burn you if you stand next to the burning barrel (oops).Placing a lid on the wooden barrel lets you pick it up into inventory.
 
 ### Hematite
 
@@ -1015,6 +1018,8 @@ Storage
 
 * Except power, first thing you should make is a Metal Press (more efficient rods and wires).
 
+* The main quest progresses through the Immersive Petroleum questline, you will need a lot of steel to complete it, but otherwise it is fairly straightforward.
+
 ## Airship
 
 * Even though the airship looks cool, it's not on the main questline and it’s very expensive to make. It requires you to upgrade the extended crafting table, and then make the airship using a lot of resources. Prioritize other progression before making it.
@@ -1037,8 +1042,7 @@ Storage
 
 * IF's Water Condenstrator produces about 100mb/t of water per water source block adjacent to it
 
-* Spawner Agitators get around the despawning spawners limit
- 
+* Spawner Agitators get around the despawning spawners limit 
 
 # Age 5 
 
@@ -1093,4 +1097,486 @@ Stage 5 really opens to be a kitchen sink pack with a lot of default recipes and
     * Saturn Slime Ore has incorrect localization, in-world WAILA will recognize it as Saturn Surface Rock, and needs to be silk touched to get the ore itself (easily found in the Surface in large patches of Saturn Infected Rock
 
     * 
+
+# Creative tips
+
+You can complete all the quests by using the following command
+
+/advancement grant playerName everything
+
+You can revert to the beginning with 
+
+/gamestage clear PlayerName
+
+You can complete individual quests with the following command followed by one of the below quests (prerequisite in parenthesis). Note this is a dump (minecraft/config/triumph/script/...) from 3.0.4 so may be outdated.
+
+/advancement grant playerName only <some triumph>
+
+triumph:stage0/kiln      (needs workstump)
+
+triumph:stage0/saltflats      (needs grill)
+
+triumph:stage0/horsechopper      (needs horsepower)
+
+triumph:stage0/tipi      (needs leather)
+
+triumph:stage0/grill      (needs firepit)
+
+triumph:stage0/workblade      (needs upgrade)
+
+triumph:stage0/flintknapp      (needs mesh)
+
+triumph:stage0/chestupgrade      (needs firstchest)
+
+triumph:stage0/fish      (needs spear)
+
+triumph:stage0/melterbase      (needs flamehopper)
+
+triumph:stage0/atlas      (needs workblade)
+
+triumph:stage0/farmland      (needs workblade)
+
+triumph:stage0/woodhopper2      (needs woodhopper1)
+
+triumph:stage0/lead      (needs leather)
+
+triumph:stage0/charcoal      (needs horsechopper)
+
+triumph:stage0/wheel      (needs saddle)
+
+triumph:stage0/flamehopper      (needs woodhopper2)
+
+triumph:stage0/workstump      (needs collectplank)
+
+triumph:stage0/abyssalgem      (needs abyssalbiome)
+
+triumph:stage0/weaponize      (needs firsttool)
+
+triumph:stage0/upgrade      (needs firsttool)
+
+triumph:stage0/fiber      (needs root)
+
+triumph:stage0/woodenbarrel      (needs fluidbladder)
+
+triumph:stage0/totemic      (needs leather)
+
+triumph:stage0/horsepower      (needs lead)
+
+triumph:stage0/lowgradecharcoal      (needs kiln)
+
+triumph:stage0/handgrind      (needs workstump)
+
+triumph:stage0/collectplank      (needs firstbreak)
+
+triumph:stage0/tomahawk      (needs weaponize)
+
+triumph:stage0/melter      (needs melterbase)
+
+triumph:stage0/abyssalbiome      (needs workstump)
+
+triumph:stage0/mill      (needs gear)
+
+triumph:stage0/buffalo      (needs totemic)
+
+triumph:stage0/firsttool      (needs root)
+
+triumph:stage0/saddle      (needs lead)
+
+triumph:stage0/firepit      (needs fire)
+
+triumph:stage0/spear      (needs weaponize)
+
+triumph:stage0/firstbreak      (needs firsttool)
+
+triumph:stage0/baykok      (needs buffalo)
+
+triumph:stage0/firstchest      (needs workstump)
+
+triumph:stage0/mesh      (needs fiber)
+
+triumph:stage0/fluidbladder      (needs workstump)
+
+triumph:stage0/mat      (needs leather)
+
+triumph:stage0/leather      (needs fluidbladder)
+
+triumph:stage0/woodhopper1      (needs firstchest)
+
+triumph:stage0/fire      (needs firsttool)
+
+triumph:stage0/gear      (needs wheel)
+
+triumph:stage0/stonetools      (needs upgrade)
+
+triumph:stage1/claybarrel      (needs root)
+
+triumph:stage1/tin      (needs prospector)
+
+triumph:stage1/woodbasin      (needs root)
+
+triumph:stage1/gearbox      (needs waterwheel)
+
+triumph:stage1/prospector      (needs crafting)
+
+triumph:stage1/parchment      (needs aquamarine)
+
+triumph:stage1/cart      (needs wheel)
+
+triumph:stage1/stepup      (needs bloodaltar)
+
+triumph:stage1/bloodaltar      (needs alloykiln)
+
+triumph:stage1/parrot      (needs statue)
+
+triumph:stage1/beneath      (needs statue)
+
+triumph:stage1/astable      (needs journal)
+
+triumph:stage1/dung      (needs claybarrel)
+
+triumph:stage1/chest      (needs crafting)
+
+triumph:stage1/alloykiln      (needs copper)
+
+triumph:stage1/crafting      (needs root)
+
+triumph:stage1/hoe      (needs root)
+
+triumph:stage1/axle      (needs blackquartz)
+
+triumph:stage1/huntingdim      (needs root)
+
+triumph:stage1/furnace      (needs crafting)
+
+triumph:stage1/turntable      (needs gearbox)
+
+triumph:stage1/coal      (needs prospector)
+
+triumph:stage1/bucket      (needs turntable)
+
+triumph:stage1/blackquartz      (needs beneath)
+
+triumph:stage1/tchannel      (needs root)
+
+triumph:stage1/statue      (needs necro)
+
+triumph:stage1/pedestal      (needs statue)
+
+triumph:stage1/plumbline      (needs crafting)
+
+triumph:stage1/stoneanvil      (needs root)
+
+triumph:stage1/aqueduct      (needs root)
+
+triumph:stage1/necro      (needs bronze)
+
+triumph:stage1/leafbed      (needs crafting)
+
+triumph:stage1/extension      (needs claybarrel)
+
+triumph:stage1/aquamarine      (needs beneath)
+
+triumph:stage1/journal      (needs parchment)
+
+triumph:stage1/bronze      (needs alloykiln)
+
+triumph:stage1/waterwheel      (needs axle)
+
+triumph:stage1/copper      (needs prospector)
+
+triumph:stage2/stevescarts      (needs piston)
+
+triumph:stage2/market      (needs gold)
+
+triumph:stage2/depth      (needs compass)
+
+triumph:stage2/smeltertank      (needs iron)
+
+triumph:stage2/lapis      (needs dowsingrod)
+
+triumph:stage2/gold      (needs dowsingrod)
+
+triumph:stage2/stopwatch      (needs compass)
+
+triumph:stage2/resonatingwand      (needs enderman)
+
+triumph:stage2/mapping      (needs extendedcraftingbasic)
+
+triumph:stage2/paper      (needs root)
+
+triumph:stage2/piston      (needs twilight)
+
+triumph:stage2/wool      (needs root)
+
+triumph:stage2/starpowder      (needs dowsingrod)
+
+triumph:stage2/skywave      (needs conpaper)
+
+triumph:stage2/extendedcraftingbasic      (needs starpowder)
+
+triumph:stage2/betweenlands      (needs root)
+
+triumph:stage2/bucket      (needs controller)
+
+triumph:stage2/enderman      (needs conpaper)
+
+triumph:stage2/twilight      (needs astable2)
+
+triumph:stage2/tcontable2      (needs tcontable1)
+
+triumph:stage2/weedwoodsticks      (needs betweenlands)
+
+triumph:stage2/weedwoodsword      (needs betweenlands)
+
+triumph:stage2/rockcrystal      (needs starpowder)
+
+triumph:stage2/compass      (needs controller)
+
+triumph:stage2/drawertable      (needs root)
+
+triumph:stage2/biomealyzer      (needs compass)
+
+triumph:stage2/wateringcan      (needs smeltertank)
+
+triumph:stage2/dowsingrod      (needs glass)
+
+triumph:stage2/iron      (needs dowsingrod)
+
+triumph:stage2/conpaper      (needs root)
+
+triumph:stage2/lightwell      (needs conpaper)
+
+triumph:stage2/glass      (needs root)
+
+triumph:stage2/tcontable1      (needs root)
+
+triumph:stage2/controller      (needs betweenlands)
+
+triumph:stage2/tcontable3      (needs tcontable2)
+
+triumph:stage2/astable2      (needs lightwell)
+
+triumph:stage2/weird      (needs enderman)
+
+triumph:stage3/crudeoil      (needs sampledrill)
+
+triumph:stage3/iehammer      (needs iebook)
+
+triumph:stage3/drawercontroller      (needs workbench)
+
+triumph:stage3/blazerod      (needs nether)
+
+triumph:stage3/projector      (needs iebook)
+
+triumph:stage3/rails      (needs root)
+
+triumph:stage3/steel      (needs creosote)
+
+triumph:stage3/oreprospector      (needs root)
+
+triumph:stage3/circuitboard      (needs vacuumtube)
+
+triumph:stage3/bauxite      (needs oreprospector)
+
+triumph:stage3/liquidplastic      (needs propene)
+
+triumph:stage3/vacuumtube      (needs workbench)
+
+triumph:stage3/standardhull      (needs woodhull)
+
+triumph:stage3/netherbrick      (needs potash)
+
+triumph:stage3/creosote      (needs iehammer)
+
+triumph:stage3/filteredhopper      (needs nether)
+
+triumph:stage3/platinum      (needs oreprospector)
+
+triumph:stage3/iebook      (needs root)
+
+triumph:stage3/conveyorbelt      (needs workbench)
+
+triumph:stage3/woodhull      (needs stevescartsassembler)
+
+triumph:stage3/galgadorian      (needs standardhull)
+
+triumph:stage3/redstone      (needs oreprospector)
+
+triumph:stage3/naphtha      (needs crudeoil)
+
+triumph:stage3/workbench      (needs iebook)
+
+triumph:stage3/amethyst      (needs nether)
+
+triumph:stage3/oreexcavation      (needs oreprospector)
+
+triumph:stage3/steam      (needs naphtha)
+
+triumph:stage3/bellows      (needs hibachi)
+
+triumph:stage3/propene      (needs steam)
+
+triumph:stage3/sampledrill      (needs circuitboard)
+
+triumph:stage3/windmill      (needs creosote)
+
+triumph:stage3/modularmachinery      (needs circuitboard)
+
+triumph:stage3/hibachi      (needs filteredhopper)
+
+triumph:stage3/silverlead      (needs oreprospector)
+
+triumph:stage3/distillation2      (needs naphtha)
+
+triumph:stage3/extendedcrafting1      (needs nether)
+
+triumph:stage3/netherexbiome      (needs nether)
+
+triumph:stage3/viescraft      (needs extendedcrafting1)
+
+triumph:stage3/waterwheel      (needs creosote)
+
+triumph:stage3/stevescartsassembler      (needs root)
+
+triumph:stage3/potash      (needs bellows)
+
+triumph:stage3/plastic      (needs liquidplastic)
+
+triumph:stage3/bonehoe      (needs netherwart)
+
+triumph:stage3/compactmachines      (needs diamond)
+
+triumph:stage3/netherwart      (needs netherexbiome)
+
+triumph:stage3/nether      (needs root)
+
+triumph:stage3/buildcraft      (needs circuitboard)
+
+triumph:stage3/nickel      (needs oreprospector)
+
+triumph:stage3/soundmuffler      (needs redstone)
+
+triumph:stage4/silicon      (needs prospector4)
+
+triumph:stage4/ardite      (needs prospector4)
+
+triumph:stage4/rsgrid      (needs inscriber)
+
+triumph:stage4/cobalt      (needs ardite)
+
+triumph:stage4/launchpad      (needs nasaworkbench)
+
+triumph:stage4/blockheads1      (needs root)
+
+triumph:stage4/amadrontablet      (needs plasticmixer)
+
+triumph:stage4/manyullyn      (needs cobalt)
+
+triumph:stage4/solidendereye      (needs root)
+
+triumph:stage4/printedcircuitboard      (needs compressediron)
+
+triumph:stage4/endercrafter      (needs enderalloy2)
+
+triumph:stage4/certusquartz      (needs prospector4)
+
+triumph:stage4/moon      (needs t1rocket)
+
+triumph:stage4/enderalloy3      (needs theend)
+
+triumph:stage4/pressurechamberwall      (needs compressediron)
+
+triumph:stage4/inscriber      (needs certusquartz)
+
+triumph:stage4/extendedcraftingelite      (needs manyullyn)
+
+triumph:stage4/spacesuit      (needs nasaworkbench)
+
+triumph:stage4/machinecasing      (needs printedcircuitboard)
+
+triumph:stage4/compressor      (needs enderalloy3)
+
+triumph:stage4/laserassembly      (needs amadrontablet)
+
+triumph:stage4/plasticmixer      (needs compressediron)
+
+triumph:stage4/ae2panel      (needs inscriber)
+
+triumph:stage4/compressediron      (needs root)
+
+triumph:stage4/t1rocket      (needs nasaworkbench)
+
+triumph:stage4/prospector4      (needs root)
+
+triumph:stage4/fuelloader      (needs compressor)
+
+triumph:stage4/enderalloy1      (needs theend)
+
+triumph:stage4/blockheads3      (needs blockheads2)
+
+triumph:stage4/enderalloy2      (needs theend)
+
+triumph:stage4/blockheads2      (needs blockheads1)
+
+triumph:stage4/theend      (needs root)
+
+triumph:stage4/nasaworkbench      (needs endercrafter)
+
+triumph:stage4/presses      (needs theend)
+
+triumph:stage5/wirelesscharger      (needs charger3)
+
+triumph:stage5/creativemodifer      (needs ultimateingot)
+
+triumph:stage5/creativeenergycube      (needs ultimateingot)
+
+triumph:stage5/emerald      (needs prospectorstage5)
+
+triumph:stage5/diamond      (needs prospectorstage5)
+
+triumph:stage5/inferiumessence      (needs saturn)
+
+triumph:stage5/prospectorstage5      (needs root)
+
+triumph:stage5/diamondjetpack      (needs electrumjetpack)
+
+triumph:stage5/t2rocket      (needs root)
+
+triumph:stage5/charger3      (needs root)
+
+triumph:stage5/osmium      (needs prospectorstage5)
+
+triumph:stage5/spacesuit4      (needs saturn)
+
+triumph:stage5/neptune      (needs saturn)
+
+triumph:stage5/ultimateingot      (needs ultimatecraftingtable)
+
+triumph:stage5/creativefluidtank      (needs ultimateingot)
+
+triumph:stage5/electrumjetpack      (needs root)
+
+triumph:stage5/scanner      (needs root)
+
+triumph:stage5/cheese      (needs prospectorstage5)
+
+triumph:stage5/prosperityshard      (needs inferiumessence)
+
+triumph:stage5/desh      (needs mars)
+
+triumph:stage5/mars      (needs t2rocket)
+
+triumph:stage5/creativecompressor      (needs ultimateingot)
+
+triumph:stage5/skystone      (needs cheese)
+
+triumph:stage5/emeraldjetpack      (needs diamondjetpack)
+
+triumph:stage5/creativejetpack      (needs ultimateingot)
+
+triumph:stage5/ultimatecraftingtable      (needs root)
+
+triumph:stage5/marsrover      (needs t2rocket)
+
+triumph:stage5/saturn      (needs mars)
 
